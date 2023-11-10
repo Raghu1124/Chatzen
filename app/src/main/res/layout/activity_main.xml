@@ -14,4 +14,14 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:listitem="@layout/user_layout"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/VideoCall_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="Video Call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

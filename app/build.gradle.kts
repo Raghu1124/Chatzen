@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.chatzen20"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.chatzen20"
@@ -75,4 +75,8 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-analytics-ktx")
+
+    //    for videocall
+    implementation ("org.jitsi.react:jitsi-meet-sdk:6.2.2") { setTransitive(true)}
+
 }

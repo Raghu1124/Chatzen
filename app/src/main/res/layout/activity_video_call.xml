@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/callView"
+    tools:context=".VideoCall">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/edt_room"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="12dp"
+            android:hint="Enter the Room Number">
+        </EditText>
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="20mm"
+            android:layout_height="52dp"
+            android:layout_margin="12dp"
+            android:backgroundTint="#0F9D58"
+            android:text="Join"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_gravity="right">
+        </Button>
+    </LinearLayout>
+</FrameLayout>

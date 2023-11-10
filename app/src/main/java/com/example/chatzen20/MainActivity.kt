@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -26,6 +27,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var adapter: UserAdapter
     private lateinit var mAuth: FirebaseAuth
     private lateinit var mDbRef: DatabaseReference
+    private lateinit var videoBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +43,15 @@ class MainActivity : ComponentActivity() {
 //                }
 //            }
 //        }
+
+//      Start for video call
+        videoBtn= findViewById(R.id.VideoCall_btn)
+        videoBtn.setOnClickListener {
+            val intent= Intent(this, VideoCall::class.java)
+            startActivity(intent)
+        }
+//      Done for video call
+
         mAuth= FirebaseAuth.getInstance()
         mDbRef= FirebaseDatabase.getInstance().getReference()
 
