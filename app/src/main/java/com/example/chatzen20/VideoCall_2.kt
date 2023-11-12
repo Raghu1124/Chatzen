@@ -1,5 +1,6 @@
 package com.example.chatzen20
 
+import android.annotation.*
 import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
@@ -13,11 +14,19 @@ import org.jitsi.meet.sdk.JitsiMeetView
 class VideoCall_2 : FragmentActivity(), JitsiMeetActivityInterface {
     private var view: JitsiMeetView? = null
 
+    @Deprecated("Deprecated in Java", ReplaceWith(
+        "JitsiMeetActivityDelegate.onActivityResult(this, requestCode, resultCode, data)",
+        "org.jitsi.meet.sdk.JitsiMeetActivityDelegate"
+    )
+    )
+    @SuppressLint("MissingSuperCall")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         JitsiMeetActivityDelegate.onActivityResult(this,
             requestCode, resultCode, data)
     }
 
+    @Suppress("DEPRECATION")
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         super.onBackPressed()
         JitsiMeetActivityDelegate.onBackPressed()
@@ -52,6 +61,7 @@ class VideoCall_2 : FragmentActivity(), JitsiMeetActivityInterface {
         JitsiMeetActivityDelegate.onNewIntent(intent)
     }
 
+    @SuppressLint("MissingSuperCall")
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
@@ -62,7 +72,9 @@ class VideoCall_2 : FragmentActivity(), JitsiMeetActivityInterface {
         )
     }
 
-    override fun requestPermissions(p0: Array<out String>?, p1: Int, p2: PermissionListener?) {}
+    override fun requestPermissions(p0: Array<out String>?, p1: Int, p2: PermissionListener?) {
+        /** No-Op */
+    }
     override fun onResume() {
         super.onResume()
         JitsiMeetActivityDelegate.onHostResume(this)
