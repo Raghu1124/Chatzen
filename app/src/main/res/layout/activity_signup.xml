@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/applogo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/icon"
+        android:layout_width="192dp"
+        android:layout_height="191dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="70dp"
+        android:src="@drawable/icon"/>
 
     <EditText
         android:id="@+id/edt_name"
