@@ -32,17 +32,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)  // content
-//        setContent {
-//            Chatzen20Theme {
-//                // A surface container using the 'background' color from the theme
-//                Surface(
-//                    modifier = Modifier.fillMaxSize(),
-//                    color = MaterialTheme.colorScheme.background
-//                ) {
-//                    Greeting("Android")
-//                }
-//            }
-//        }
 
 //      Start for video call
         videoBtn= findViewById(R.id.VideoCall_btn)
@@ -86,7 +75,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
-        return super.onCreateOptionsMenu(menu)
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -99,9 +88,11 @@ class MainActivity : ComponentActivity() {
             return true
 
         }
-        return true
+        return super.onOptionsItemSelected(item)
     }
+
 }
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {

@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/logout"
-          android:title="LogOut"
+    <item
+        android:id="@+id/openlink"
+        android:title="Open the link"
         android:icon="@drawable/more"
-        app:showAsAction="never"/>
-
+        app:showAsAction="never" />
 </menu>
