@@ -4,20 +4,29 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="150dp">
 
+    <ImageView
+        android:id="@+id/openlink"
+        android:layout_width="18sp"
+        android:layout_height="36sp"
+        android:src="@drawable/more"
+        android:layout_marginRight="-1.5dp"
+        android:layout_alignParentEnd="true" />
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/btn_background">
 
         <TextView
             android:id="@+id/txt_receive_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is receive message"
             android:padding="10dp"
+            android:text="This is receive message"
             android:textSize="18sp" />
     </RelativeLayout>
 
