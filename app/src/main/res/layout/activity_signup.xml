@@ -22,6 +22,7 @@
         android:layout_marginTop="25dp"
         android:hint="Name"
         android:paddingLeft="22dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/hintcolor"
         android:layout_centerHorizontal="true"
         android:background="@drawable/edt_bg2"
@@ -37,6 +38,7 @@
         android:layout_centerHorizontal="true"
         android:hint="Email"
         android:paddingLeft="22dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/hintcolor"
         android:background="@drawable/edt_bg2"
         android:layout_marginLeft="20dp"
@@ -52,6 +54,7 @@
         android:textColorHint="@color/hintcolor"
         android:hint="Password"
         android:paddingLeft="22dp"
+        android:textColor="@color/white"
         android:background="@drawable/edt_bg2"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
