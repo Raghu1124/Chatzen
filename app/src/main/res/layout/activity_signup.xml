@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup">
+    tools:context=".signup"
+    android:background="@drawable/bg_loginn">
 
     <ImageView
         android:id="@+id/applogo"
@@ -12,41 +12,47 @@
         android:layout_height="191dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:src="@drawable/icon"/>
+        android:src="@drawable/logoo"/>
 
     <EditText
         android:id="@+id/edt_name"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_below="@+id/applogo"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:hint="Name"
-        android:paddingLeft="13dp"
-        android:background="@drawable/edt_background"
+        android:paddingLeft="22dp"
+        android:textColorHint="@color/hintcolor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edt_bg2"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
     <EditText
         android:id="@+id/edt_email"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_below="@+id/edt_name"
         android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
         android:hint="Email"
-        android:paddingLeft="13dp"
-        android:background="@drawable/edt_background"
+        android:paddingLeft="22dp"
+        android:textColorHint="@color/hintcolor"
+        android:background="@drawable/edt_bg2"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
     <EditText
         android:id="@+id/edt_password"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_below="@+id/edt_email"
         android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/hintcolor"
         android:hint="Password"
-        android:paddingLeft="13dp"
-        android:background="@drawable/edt_background"
+        android:paddingLeft="22dp"
+        android:background="@drawable/edt_bg2"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
@@ -55,11 +61,12 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_password"
-        android:text="Sign up"
+        android:text="Sign Up"
         android:background="@drawable/btn_background"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"/>
 
 </RelativeLayout>
