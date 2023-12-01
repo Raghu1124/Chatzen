@@ -35,7 +35,7 @@
             android:hint="Type a Message"
             android:textColorHint="@color/hintcolor"
             android:paddingLeft="22dp"
-            android:textColor="@color/hintcolor" />
+            android:textColor="@color/white"/>
 
         <ImageView
             android:id="@+id/sendButton"
